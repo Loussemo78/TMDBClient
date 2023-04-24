@@ -1,4 +1,4 @@
-package com.example.tmdbclient.data.model.repository.movie.datasource
+package com.example.tmdbclient.data.model.artist.repository.movie.datasource
 
 import com.example.tmdbclient.data.model.artist.Artist
 import com.example.tmdbclient.data.model.movie.Movie

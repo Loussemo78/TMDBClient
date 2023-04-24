@@ -1,8 +1,7 @@
-package com.example.tmdbclient.data.model.repository.artist
+package com.example.tmdbclient.data.model.artist.repository.artist.datasourceImpl
 
 import com.example.tmdbclient.data.model.artist.Artist
-import com.example.tmdbclient.data.model.movie.Movie
-import com.example.tmdbclient.data.model.repository.movie.datasource.MovieCacheDataSource
+import com.example.tmdbclient.data.model.artist.repository.artist.datasource.ArtistCacheDataSource
 
 class ArtistCacheDataSourceImpl: ArtistCacheDataSource {
     private var artistList = ArrayList<Artist>()

@@ -1,10 +1,10 @@
-package com.example.tmdbclient.data.model.repository
+package com.example.tmdbclient.data.model.artist.repository
 
 import android.util.Log
+import com.example.tmdbclient.data.model.artist.repository.movie.datasource.MovieCacheDataSource
+import com.example.tmdbclient.data.model.artist.repository.movie.datasource.MovieLocalDataSource
+import com.example.tmdbclient.data.model.artist.repository.movie.datasource.MovieRemoteDataSource
 import com.example.tmdbclient.data.model.movie.Movie
-import com.example.tmdbclient.data.model.repository.movie.datasource.MovieCacheDataSource
-import com.example.tmdbclient.data.model.repository.movie.datasource.MovieLocalDataSource
-import com.example.tmdbclient.data.model.repository.movie.datasource.MovieRemoteDataSource
 import com.example.tmdbclient.domain.repository.MovieRepository
 
 class MovieRepositoryImpl(

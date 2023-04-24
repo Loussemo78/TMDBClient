@@ -1,8 +1,8 @@
-package com.example.tmdbclient.data.model.repository.movie.datasourceImpl
+package com.example.tmdbclient.data.model.artist.repository.movie.datasourceImpl
 
+import com.example.tmdbclient.data.model.artist.repository.movie.datasource.MovieLocalDataSource
 import com.example.tmdbclient.data.model.db.MovieDao
 import com.example.tmdbclient.data.model.movie.Movie
-import com.example.tmdbclient.data.model.repository.movie.datasource.MovieLocalDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
