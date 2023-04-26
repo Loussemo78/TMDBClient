@@ -17,6 +17,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String","API_KEY","\"cf2aad418044ffae69518e2240d5f06a\""
+        buildConfigField "String","BASE_URL","\"https://api.themoviedb.org/3/\""
     }
 
     buildTypes {
