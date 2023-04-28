@@ -26,6 +26,7 @@ class TvShowActivity : AppCompatActivity() {
     private lateinit var binding: ActivityTvShowBinding
     private lateinit var tvshowViewModel: TvShowViewModel
     private lateinit var adapter: TvAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_tv_show)
