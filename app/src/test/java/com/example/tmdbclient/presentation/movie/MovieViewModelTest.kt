@@ -6,7 +6,8 @@ import com.example.tmdbclient.data.model.movie.Movie
 import com.example.tmdbclient.data.repository.movie.FakeMovieRepository
 import com.example.tmdbclient.domain.usecase.GetMoviesUseCase
 import com.example.tmdbclient.domain.usecase.UpdateMoviesUseCase
-import org.junit.Assert.*
+import com.example.tmdbclient.getOrAwaitValue
+import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -34,6 +35,16 @@ class MovieViewModelTest {
         movies.add(Movie(1,"overview1","path1","date1","title1"))
         movies.add(Movie(2,"overview2","path2","date2","title2"))
 
-        val currentList = viewModel.getMovies()
+        val currentList = viewModel.getMovies().getOrAwaitValue()
+        assertThat(currentList).isEqualTo(movies)
+    }
+
+    @Test
+    fun updateMovies_returnsUpdatedList(){
+        val movies = mutableListOf<Movie>()
+        movies.add(Movie(3,"overview3","path3","date3","title3"))
+        movies.add(Movie(4,"overview4","path4","date4","title4"))
+        val updateList = viewModel.updateMovies().getOrAwaitValue()
+        assertThat(updateList).isEqualTo(movies)
     }
 }
